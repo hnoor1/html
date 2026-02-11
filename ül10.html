@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta.name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ülesanne nr 10</title>
+</head>
+
+<body>
+<h1>ÕPILASE REGISTREERIMISVORM</h1>
+
+<form>
+    <fieldset>
+        <legend>Isikuandmed</legend>
+
+        <p>
+            <label for="eesnimi">Eesnimi</label><br>
+            <input id="eesnimi" name="eesnimi" type="text" maxlength="30" placeholder="nt Hanna-Liina" required>
+        </p>
+
+        <p>
+            <label for="perenimi">Perenimi</label><br>
+            <input id="perenimi" name="perenimi" type="text" maxlength="30" placeholder="nt Nöör" required>
+        </p>
+
+        <p>
+            <label for="synnikuupaev">Sünnikuupäev</label><br>
+            <input id="synnikuupaev" name="synnikuupaev" type="date" min="1950-01-01-01" max="2026-01-01" value="2000-01-01" required>
+        </p>
+
+        <p>
+            <label for="sugu">Sugu</label><br>
+            <input type="radio" name="sugu" value="Naine"> Naine
+            <input type="radio" name="sugu" value="Mees"> Mees
+            <input type="radio" name="sugu" value="Muu"> Muu
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Kontakt</legend>
+
+        <p>
+           <label for="email">E-post</label><br>
+           <input id="email" name="email" type="email" maxlenght="100" placeholder="nt nimi.perenimi@gmail.com" required>
+        </p>
+
+        <p>
+            <label for="telf">Telefon</label><br>
+            <input id="telf" name="telf" type="tel" pattern="^\+372\s?\d{7,8}$" placeholder="nt +372 50123456" required>
+        </p>
+    
+        <p>
+            <label for="adr">Aadress</label><br>
+            <textarea name="adr" placeholder="Tänav, maja- või korterinumber" required></textarea>
+        </p>
+
+        <p>
+            <label for="linn-asula">Linn või asula</label><br>
+            <input id="linn-asula" name="linn-asula" type="text" maxlenght="30" placeholder="nt Haapsalu" required>
+        </p>
+
+        <p>
+            <label for="postiindeks">Postiindeks</label><br>
+            <input id="postiindeks" name="postiindeks" type="number" maxlenght="5" pattern="^\d{5}$" required>
+        </p>
+
+        <p>
+            <label for="riik">Riik</label><br>
+            <input it="riik" name="riik" type="text" value="Eesti" readonly>
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Muu info</legend>
+        <p>
+            <label for="huviala">Huvialad</label><br>
+            <input type="checkbox" name="huviala"> Joonistamine
+            <input type="checkbox" name="huviala"> Laulmine
+            <input type="checkbox" name="huviala"> Tantsimine
+            <input type="checkbox" name="huviala"> Kokkamine
+            <br>
+            <input type="checkbox" name="huviala_muu" valume="1"> Muu:
+            <input type="text" name="huviala_muu" maxlenght="30" placeholder="Täpsusta (maksimaalselt 30 tähemärki)">
+        </p>
+
+        <p>
+            <label for="veebileht">Isiklik veebileht</label><br>
+            <input id="veebileht" name="veebileht" type="url" placeholder=" nt https://veebileheaadress.ee" required>
+        </p>
+
+        <p>
+            <label for="varv">Eelistatud teemavärv (valikuline)</label><br>
+            <input id="varv" name="varv" type="color" value="#EE82EE">
+        </p>
+
+        <p>
+            <label for="docpic">Dokumendid (PDF või pilt)</label><br>
+            <input id="docpic" name="docpic" type="file" accept=".pdf,image/*">
+    </fieldset>
+
+    <fieldset>
+        <legend>Nõustumine</legend>
+
+        <p>
+            <input id="noustumine" type="checkbox" name="huviala" required>
+            <label for="noustumine">Kinnitan, et esitatud andmed on õiged ja luban nende töötlemist vastavalt kooli tingimustele.</label>
+        </p>
+    </fieldset>
+ 
+    <p>
+        <button type="submit">Saada</button>
+        <button type="reset">Tühjenda</button>
+    </p>
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
