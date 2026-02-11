@@ -2,7 +2,7 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <meta.name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ülesanne nr 10</title>
 </head>
 
@@ -25,14 +25,14 @@
 
         <p>
             <label for="synnikuupaev">Sünnikuupäev</label><br>
-            <input id="synnikuupaev" name="synnikuupaev" type="date" min="1950-01-01-01" max="2026-01-01" value="2000-01-01" required>
+            <input id="synnikuupaev" name="synnikuupaev" type="date" min="1950-01-01" max="2026-01-01" value="2000-01-01" required>
         </p>
 
         <p>
-            <label for="sugu">Sugu</label><br>
-            <input type="radio" name="sugu" value="Naine"> Naine
-            <input type="radio" name="sugu" value="Mees"> Mees
-            <input type="radio" name="sugu" value="Muu"> Muu
+            <label>Sugu</label><br>
+            <input id="sugu_naine" type="radio" name="sugu" value="Naine"> Naine
+            <input id="sugu_mees" type="radio" name="sugu" value="Mees"> Mees
+            <input id="sugu_muu" type="radio" name="sugu" value="Muu"> Muu
         </p>
     </fieldset>
 
@@ -41,7 +41,7 @@
 
         <p>
            <label for="email">E-post</label><br>
-           <input id="email" name="email" type="email" maxlenght="100" placeholder="nt nimi.perenimi@gmail.com" required>
+           <input id="email" name="email" type="email" maxlength="100" placeholder="nt nimi.perenimi@gmail.com" required>
         </p>
 
         <p>
@@ -50,23 +50,23 @@
         </p>
     
         <p>
-            <label for="adr">Aadress</label><br>
-            <textarea name="adr" placeholder="Tänav, maja- või korterinumber" required></textarea>
+            <label for="aadress">Aadress</label><br>
+            <textarea id="aadress" name="aadress" placeholder="Tänav, maja- või korterinumber" required></textarea>
         </p>
 
         <p>
             <label for="linn-asula">Linn või asula</label><br>
-            <input id="linn-asula" name="linn-asula" type="text" maxlenght="30" placeholder="nt Haapsalu" required>
+            <input id="linn-asula" name="linn-asula" type="text" maxlength="30" placeholder="nt Haapsalu" required>
         </p>
 
         <p>
             <label for="postiindeks">Postiindeks</label><br>
-            <input id="postiindeks" name="postiindeks" type="number" maxlenght="5" pattern="^\d{5}$" required>
+            <input id="postiindeks" name="postiindeks" type="text" maxlength="5" pattern="^\d{5}$" placeholder="nt 90507" required>        
         </p>
 
         <p>
             <label for="riik">Riik</label><br>
-            <input it="riik" name="riik" type="text" value="Eesti" readonly>
+            <input id="riik" name="riik" type="text" value="Eesti" readonly>
         </p>
 
     </fieldset>
@@ -74,14 +74,14 @@
     <fieldset>
         <legend>Muu info</legend>
         <p>
-            <label for="huviala">Huvialad</label><br>
-            <input type="checkbox" name="huviala"> Joonistamine
-            <input type="checkbox" name="huviala"> Laulmine
-            <input type="checkbox" name="huviala"> Tantsimine
-            <input type="checkbox" name="huviala"> Kokkamine
+            <label>Huvialad</label><br>
+            <input id="joonistamine" type="checkbox" name="huviala"> Joonistamine
+            <input id="laulmine" type="checkbox" name="huviala"> Laulmine
+            <input id="tantsimine" type="checkbox" name="huviala"> Tantsimine
+            <input id="kokkamine" type="checkbox" name="huviala"> Kokkamine
             <br>
-            <input type="checkbox" name="huviala_muu" valume="1"> Muu:
-            <input type="text" name="huviala_muu" maxlenght="30" placeholder="Täpsusta (maksimaalselt 30 tähemärki)">
+            <input type="checkbox" name="huviala_muu" value="1"> Muu:
+            <input id= "huviala_muu" type="text" name="huviala_muu" maxlength="30" placeholder="Täpsusta (maksimaalselt 30 tähemärki)">
         </p>
 
         <p>
@@ -97,13 +97,14 @@
         <p>
             <label for="docpic">Dokumendid (PDF või pilt)</label><br>
             <input id="docpic" name="docpic" type="file" accept=".pdf,image/*">
+        </p>
     </fieldset>
 
     <fieldset>
         <legend>Nõustumine</legend>
 
         <p>
-            <input id="noustumine" type="checkbox" name="huviala" required>
+            <input id="noustumine" type="checkbox" name="noustumine" required>
             <label for="noustumine">Kinnitan, et esitatud andmed on õiged ja luban nende töötlemist vastavalt kooli tingimustele.</label>
         </p>
     </fieldset>
